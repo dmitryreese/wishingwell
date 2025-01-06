@@ -1,0 +1,58 @@
+button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(1, 1, 1, 0.1);
+    cursor: pointer;
+    transition: background-color ease-in-out .2s;
+
+    &:hover {
+        background-color: rgba(1, 1, 1, 0.2)
+    }
+}
+
+.wrapper {
+    margin: 12px 96px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+
+    button:first-child {
+        margin-right: 12px;
+    }
+}
+
+.column {
+    padding: 12px;
+    min-width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.column-editable {
+    position: relative;
+
+    &:after {
+        content: '✏️';
+        margin-left: 8px;
+    }
+}
+
+.content-column {
+    word-wrap: break-word;
+}
+
+.column-about {
+    min-width: 400px;
+    hyphens: auto;
+}
+
+.column-_id, .column-guid, .column-email, .column-address {
+    min-width: 200px;
+    max-width: 200px;
+}

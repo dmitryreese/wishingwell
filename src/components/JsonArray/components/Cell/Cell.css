@@ -1,0 +1,38 @@
+.cell-wrapper {
+    position: relative;
+
+    textarea {
+        outline: none;
+        border: none;
+        height: 100%;
+        box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.75);
+    }
+
+    &:last-child {
+        .input-button-container {
+            left: -38px;
+        }
+    }
+}
+
+.input-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    background-color: white;
+    padding-left: 4px;
+
+    button {
+        width: 30px;
+        height: 30px;
+    }
+
+    button:first-child {
+        margin-bottom: 4px;
+    }
+}
